@@ -1,0 +1,22 @@
+.hero{
+    background: url('../img/hero.jpg');
+    grid-column: full-start / full-end;
+    background-size: cover;
+
+    position: relative;
+
+    &__title{
+        color: #fff;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+
+
+    }
+
+
+
+
+}

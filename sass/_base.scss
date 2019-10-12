@@ -1,0 +1,51 @@
+// COLOR VARIABLES
+$dark-blue:#00205b;
+$light-blue: #034ea1;
+
+$icon-grey: #ACACAC;
+
+$shadow: rgb(134, 134, 134);
+
+// FONT VARIABLES
+$font-primary: 'Crimson Text', serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-xl: 75em; // 1200px / 16 = 75
+$bp-l: 62.5em; // 1000px
+$bp-m: 50em; // 800px
+$bp-s: 37.5em; // 600px
+
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 10/16 = 62.5%, 1rem = 10px
+
+}
+
+body{
+    font-family: $font-primary;
+    color: $dark-blue;
+    font-size: 2.4rem;
+    line-height: 1.6;;
+    
+}
+
+
+.container{
+    display: grid;
+    grid-template-rows: 19.5rem 75vh repeat(7,min-content);
+    grid-template-columns: [full-start] 8rem [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 8rem [full-end];
+}
+
+a{
+    text-decoration: none;
+}
