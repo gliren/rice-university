@@ -1,0 +1,61 @@
+.topbar{
+    grid-column: full-start / full-end;
+    padding: 6rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:  0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+    z-index: 2000;
+    position: sticky;
+    top: 0;
+    background: #fff;
+
+    &__logo{
+
+        
+    }
+
+    &__icons{
+        display:flex;
+        align-items: center;
+
+    }
+
+    &__icon{
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        background: $icon-grey;
+        border-radius: 50%;
+        color:#fff;
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+        margin-right: 5rem;
+
+        i{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        
+    }
+
+    &__menu-icon{
+        color: $light-blue;
+        font-family: $font-secondary;
+        font-weight: 700;
+        font-size: 1.75rem;
+
+        display: flex;
+        align-items: center;
+
+        i{
+            margin-left: 1.5rem;
+            color: $icon-grey;
+            font-size: 3rem;
+        }
+    }
+}
+
