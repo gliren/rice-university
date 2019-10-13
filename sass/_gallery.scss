@@ -1,0 +1,19 @@
+.gallery{
+
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 2rem;
+
+    &__box{
+        text-align: center;
+        border-right: 1px solid $hr-blue;
+        border-bottom: 1px solid $hr-blue;
+        padding: 2.5rem 0;
+    }
+
+
+
+}

@@ -1,6 +1,7 @@
 // COLOR VARIABLES
 $dark-blue:#00205b;
 $light-blue: #034ea1;
+$hr-blue :#afd4ee;
 
 $icon-grey: #ACACAC;
 
@@ -42,10 +43,26 @@ body{
 
 .container{
     display: grid;
+    width: 100vw;
+    height: 100vh;
     grid-template-rows: 19.5rem 75vh repeat(7,min-content);
-    grid-template-columns: [full-start] 8rem [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 8rem [full-end];
+    grid-template-columns: [full-start] 8rem [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(8rem,1fr) [full-end];
 }
 
 a{
     text-decoration: none;
 }
+
+
+
+
+.default-space{
+    padding: 6rem 8rem;
+}
+
+.hr-blue{
+    border-color: $hr-blue;
+    width: 100%;
+}
+
+
