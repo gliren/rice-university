@@ -1,0 +1,24 @@
+.navigation{
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: .1rem;
+    // align-items: center;
+
+    &__box{
+        background: $light-blue;
+        padding: 6rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        a{
+            color: #fff;
+
+
+
+
+        }
+    }
+}
