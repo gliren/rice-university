@@ -4,8 +4,10 @@ $light-blue: #034ea1;
 $hr-blue :#afd4ee;
 
 $icon-grey: #ACACAC;
-
+$text-grey: #4d4d4f;
 $shadow: rgb(134, 134, 134);
+
+$green:#a4c055;
 
 // FONT VARIABLES
 $font-primary: 'Crimson Text', serif;
@@ -41,6 +43,27 @@ body{
 }
 
 
+a:link,
+a:visited{
+    text-decoration: none;
+}
+
+h3{
+    font-size: 4.8rem;
+}
+
+strong{
+    color: $light-blue;
+}
+
+p{
+    color: $text-grey;
+    font-size: 1.6rem;
+    text-align: left;
+    font-family: $font-secondary;
+}
+
+
 .container{
     display: grid;
     width: 100vw;
@@ -48,12 +71,6 @@ body{
     grid-template-rows: 19.5rem 75vh repeat(7,min-content);
     grid-template-columns: [full-start] 8rem [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(8rem,1fr) [full-end];
 }
-
-a{
-    text-decoration: none;
-}
-
-
 
 
 .default-space{
@@ -64,5 +81,7 @@ a{
     border-color: $hr-blue;
     width: 100%;
 }
+
+
 
 
