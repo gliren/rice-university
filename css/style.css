@@ -45,6 +45,31 @@ p {
   border-color: #afd4ee;
   width: 100%; }
 
+.view-more {
+  background: #00205b;
+  min-height: 9.6rem;
+  color: #fff;
+  grid-column: full-start/full-end;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.headline {
+  grid-column: full-start / full-end;
+  text-align: center; }
+  .headline__title {
+    font-size: 9rem;
+    font-weight: 600; }
+    .headline__title span {
+      color: #034ea1; }
+  .headline hr {
+    border-color: #afd4ee;
+    margin: 6rem 0; }
+  .headline__description {
+    padding: 0 6%;
+    font-size: 2.7rem;
+    font-weight: 400; }
+
 .topbar {
   grid-column: full-start / full-end;
   padding: 6rem 8rem;
@@ -98,22 +123,6 @@ p {
     left: 50%;
     transform: translateX(-50%);
     text-transform: uppercase; }
-
-.news {
-  grid-column: full-start / full-end;
-  text-align: center; }
-  .news__title {
-    font-size: 9rem;
-    font-weight: 600; }
-    .news__title span {
-      color: #034ea1; }
-  .news hr {
-    border-color: #afd4ee;
-    margin: 6rem 0; }
-  .news__description {
-    padding: 0 6%;
-    font-size: 2.7rem;
-    font-weight: 400; }
 
 .gallery {
   grid-column: full-start / full-end;
@@ -178,11 +187,34 @@ p {
     color: #00205b;
     font-weight: 600; }
 
-.events {
-  grid-column: 1/-1; }
+.facts {
+  grid-column: full-start / full-end;
+  background: linear-gradient(0deg, rgba(0, 32, 91, 0.6), rgba(0, 32, 91, 0.6)), url("../img/fact-bg.png");
+  background-size: cover;
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 4.27rem; }
 
-.convention {
-  grid-column: 1/-1; }
+.creativity {
+  grid-column: full-start/full-end;
+  height: 50rem;
+  background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)), url("../img/creativity.jpg");
+  background-size: cover;
+  color: #fff; }
+
+.people {
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .people__link {
+    height: 100%;
+    width: 100%;
+    display: inline-block; }
+  .people img {
+    width: 100%; }
 
 .footer {
   grid-column: 1/-1; }

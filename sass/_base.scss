@@ -19,7 +19,7 @@ $bp-l: 62.5em; // 1000px
 $bp-m: 50em; // 800px
 $bp-s: 37.5em; // 600px
 
-
+// default style
 *,
 *::before,
 *::after{
@@ -72,7 +72,7 @@ p{
     grid-template-columns: [full-start] 8rem [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(8rem,1fr) [full-end];
 }
 
-
+// Reusable class
 .default-space{
     padding: 6rem 8rem;
 }
@@ -80,6 +80,46 @@ p{
 .hr-blue{
     border-color: $hr-blue;
     width: 100%;
+}
+
+.view-more{
+    background: $dark-blue;
+    min-height: 9.6rem;
+    color: #fff;
+    grid-column: full-start/full-end;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headline{
+    grid-column: full-start / full-end;
+    text-align: center;
+
+    &__title{
+        font-size: 9rem;
+        font-weight: 600;
+
+        span{
+            color: $light-blue;
+        }
+    }
+
+    hr{
+        border-color: $hr-blue;
+        margin: 6rem 0;
+    }
+
+    &__description{
+        padding: 0 6%;
+        font-size: 2.7rem;
+        font-weight: 400;
+        
+
+    }
+
 }
 
 
