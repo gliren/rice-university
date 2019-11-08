@@ -1,0 +1,21 @@
+.people{
+    grid-column: full-start/full-end;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    &__link{
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+
+    }
+
+    img{
+        width: 100%;
+
+        
+    }
+    
+
+}
