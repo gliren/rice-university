@@ -48,6 +48,11 @@ a:visited{
     text-decoration: none;
 }
 
+h2{
+    font-size: 6.4rem;
+    color: #fff;
+}
+
 h3{
     font-size: 4.8rem;
 }
@@ -61,6 +66,10 @@ p{
     font-size: 1.6rem;
     text-align: left;
     font-family: $font-secondary;
+}
+
+ul{
+    list-style: none;
 }
 
 

@@ -1,20 +1,40 @@
+%block{
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+}
+
 .people{
     grid-column: full-start/full-end;
 
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
-    &__link{
-        height: 100%;
-        width: 100%;
-        display: inline-block;
 
+    &--1{
+        @extend %block;
+        background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)), url('../img/girl.jpg');
     }
 
-    img{
-        width: 100%;
+    &--2{
+        @extend %block;
+        background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)),url('../img/earth.jpg');
+    }
 
-        
+    &--3{
+        @extend %block;
+        background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)),url('../img/two-people.jpg');
+    }
+
+    &__sub{
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+        border-bottom: 1px solid $green;
+        font-size: 1.2rem;
+        font-weight: 600;
+        i{
+            color: $green;
+        }
     }
     
 

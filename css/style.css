@@ -19,6 +19,10 @@ a:link,
 a:visited {
   text-decoration: none; }
 
+h2 {
+  font-size: 6.4rem;
+  color: #fff; }
+
 h3 {
   font-size: 4.8rem; }
 
@@ -30,6 +34,9 @@ p {
   font-size: 1.6rem;
   text-align: left;
   font-family: "Montserrat", sans-serif; }
+
+ul {
+  list-style: none; }
 
 .container {
   display: grid;
@@ -205,16 +212,57 @@ p {
   background-size: cover;
   color: #fff; }
 
+.people--1, .people--2, .people--3 {
+  background-size: cover;
+  height: 50rem;
+  width: 100%; }
+
 .people {
   grid-column: full-start/full-end;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
-  .people__link {
-    height: 100%;
-    width: 100%;
-    display: inline-block; }
-  .people img {
-    width: 100%; }
+  .people--1 {
+    background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)), url("../img/girl.jpg"); }
+  .people--2 {
+    background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)), url("../img/earth.jpg"); }
+  .people--3 {
+    background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)), url("../img/two-people.jpg"); }
+  .people__sub {
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 1px solid #a4c055;
+    font-size: 1.2rem;
+    font-weight: 600; }
+    .people__sub i {
+      color: #a4c055; }
 
 .footer {
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  padding: 6rem 8rem;
+  font-family: "Montserrat", sans-serif; }
+  .footer__brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__logo {
+    width: 40%; }
+    .footer__logo img {
+      width: 70%; }
+  .footer__links {
+    display: flex; }
+  .footer__link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-right: 1.5rem; }
+    .footer__link a {
+      color: #034ea1;
+      font-weight: 600; }
+  .footer__address {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #4d4d4f;
+    font-style: normal;
+    display: block;
+    text-align: right;
+    font-weight: 600; }
