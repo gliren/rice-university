@@ -240,8 +240,29 @@ ul {
 .footer {
   grid-column: 1/-1;
   padding: 6rem 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
+  font-family: "Montserrat", sans-serif; }
+  .footer__brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__logo {
+    width: 40%; }
+    .footer__logo img {
+      width: 70%; }
   .footer__links {
     display: flex; }
+  .footer__link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-right: 1.5rem; }
+    .footer__link a {
+      color: #034ea1;
+      font-weight: 600; }
+  .footer__address {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #4d4d4f;
+    font-style: normal;
+    display: block;
+    text-align: right;
+    font-weight: 600; }
