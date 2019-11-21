@@ -4,7 +4,7 @@
   "scripts": {
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
     "compile:sass": "node-sass sass/main.scss css/style.css",
-    "devserver": "live-server --browser=firefox",
+    "devserver": "live-server --ignore=node_modules,sass --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:sass",
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css ",
@@ -14,8 +14,8 @@
   "devDependencies": {
     "autoprefixer": "^9.6.4",
     "concat": "^1.0.3",
-    "node-sass": "^4.12.0",
-    "nodemon": "^1.19.3",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.1.3"
   }

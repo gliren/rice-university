@@ -4,4 +4,13 @@
     background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)), url('../img/creativity.jpg');
     background-size: cover;
     color: #fff;
+    position: relative;
+
+    &__content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 1.5rem;
+
+    }
 }
