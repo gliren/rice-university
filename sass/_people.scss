@@ -2,6 +2,9 @@
     background-size: cover;
     height: 50rem;
     width: 100%;
+    padding: 2rem;
+    position: relative;
+
 }
 
 .people{
@@ -10,19 +13,31 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
 
+
+    &__content{
+        color: #fff;
+        position: absolute;
+        left:0;
+        bottom: 0;
+        padding: 1.5rem;
+    }
+
     &--1{
         @extend %block;
         background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)), url('../img/girl.jpg');
+
     }
 
     &--2{
         @extend %block;
         background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)),url('../img/earth.jpg');
+
     }
 
     &--3{
         @extend %block;
         background: linear-gradient(0deg, rgba(15, 15, 25, 0.6), rgba(15, 15, 25, 0.6)),url('../img/two-people.jpg');
+
     }
 
     &__sub{
@@ -30,7 +45,7 @@
         color: #fff;
         display: inline-block;
         border-bottom: 1px solid $green;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: 600;
         i{
             color: $green;
